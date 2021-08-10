@@ -21,12 +21,18 @@
     <br>
     按钮事件<br>
     <button @click="showInfo(name)">点击出奇迹</button>
+<!--    使用组件-->
+    <Index/>
   </div>
 </template>
 
 <script>
+  import Index from "@/components/Index.vue"
 export default {
   name: 'App',
+  components:{
+    Index
+  },
   data(){
     return{
       name:'李老师',
